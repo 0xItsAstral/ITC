@@ -1,0 +1,128 @@
+<link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/style.css">/* Custom CSS for clone_plagiat UI enhancement */
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #0E0353 0%, #011630 100%);
+    min-height: 100vh;
+}
+
+nav {
+    box-shadow: 0 4px 24px 0 rgba(23, 194, 232, 0.08);
+    border-bottom: 1px solid #1a1a2e;
+    z-index: 50;
+}
+
+nav .text-yellow-400 {
+    text-shadow: 1px 1px 8px #FFC90799;
+}
+
+nav ul li a {
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+nav button, .show-modal, .pagination-btn, .inline-flex {
+    box-shadow: 0 2px 12px 0 rgba(23, 194, 232, 0.15);
+    transition: all 0.3s cubic-bezier(.4,0,.2,1);
+}
+
+nav button:hover, .show-modal:hover, .pagination-btn:hover, .inline-flex:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 6px 24px 0 rgba(23, 194, 232, 0.25);
+}
+
+/* Hero Image */
+.mt-24 img {
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px 0 rgba(23, 194, 232, 0.15);
+    object-fit: cover;
+}
+
+/* Card Devisi */
+#devisi .w-full.bg-white {
+    background: linear-gradient(135deg, #011630 60%, #17C2E8 100%);
+    border: none;
+    box-shadow: 0 8px 32px 0 rgba(23, 194, 232, 0.10);
+    transition: transform 0.2s;
+}
+#devisi .w-full.bg-white:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 16px 48px 0 rgba(23, 194, 232, 0.18);
+}
+#devisi img {
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+    min-height: 180px;
+    max-height: 220px;
+}
+#devisi .p-5 p {
+    color: #e0e7ef;
+}
+
+/* Table */
+table {
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #011630;
+}
+thead {
+    background: #17C2E8 !important;
+    color: #fff !important;
+}
+tbody tr {
+    transition: background 0.2s;
+}
+tbody tr:hover {
+    background: #0E0230 !important;
+}
+td, th {
+    border: 1px solid #17C2E8 !important;
+}
+
+/* Status badge */
+.bg-cyan-500 {
+    background: linear-gradient(90deg, #17C2E8 60%, #FFC907 100%) !important;
+    color: #fff !important;
+    box-shadow: 0 2px 8px 0 #17C2E855;
+}
+
+/* About & Info */
+#about .bg-[#011630], #about .bg-[#011630].md0 {
+    background: linear-gradient(135deg, #011630 60%, #0E0353 100%);
+    border: 1px solid #17C2E8;
+    box-shadow: 0 4px 24px 0 #17C2E855;
+}
+
+#about h1 span {
+    text-shadow: 1px 1px 8px #FFC90799;
+}
+
+/* Footer */
+footer {
+    border-top: 2px solid #17C2E8;
+    box-shadow: 0 -2px 24px 0 #17C2E855;
+}
+footer img {
+    filter: drop-shadow(0 2px 8px #17C2E8);
+}
+footer h2 {
+    letter-spacing: 2px;
+}
+footer .text-white {
+    color: #e0e7ef !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    nav .text-2xl {
+        font-size: 1.2rem;
+    }
+    .mt-24 img {
+        min-height: 180px;
+        max-height: 220px;
+    }
+    #devisi img {
+        min-height: 120px;
+        max-height: 160px;
+    }
+}
